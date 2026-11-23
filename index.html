@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip & Smart Bill Splitter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="splitter-card">
+    <!-- Header -->
+    <div class="card-header">
+      <span class="card-number">2</span>
+      <h2>Tip & Smart Bill Splitter</h2>
+    </div>
+
+    <div class="card-body">
+      <!-- Input Panel -->
+      <div class="input-section">
+        <div class="input-group">
+          <label for="bill-total">Total Bill ($)</label>
+          <input type="number" id="bill-total" placeholder="0.00" min="0" step="0.01">
+        </div>
+
+        <div class="input-group">
+          <label>Tip Percentage</label>
+          <div class="tip-buttons">
+            <button class="tip-btn" data-tip="10">10%</button>
+            <button class="tip-btn active" data-tip="15">15%</button>
+            <button class="tip-btn" data-tip="20">20%</button>
+            <input type="number" id="custom-tip" placeholder="Custom %" min="0">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="friend-count">Split Among Friends</label>
+          <div class="people-counter">
+            <button id="decrement-btn" type="button">-</button>
+            <input type="number" id="friend-count" value="2" min="1">
+            <button id="increment-btn" type="button">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Display Panel -->
+      <div class="display-section">
+        <div class="dynamic-feedback" id="emoji-feedback">👥 Let's split it!</div>
+        
+        <div class="result-row">
+          <span>Tip Amount</span>
+          <span class="value" id="tip-amount">$0.00</span>
+        </div>
+        <div class="result-row">
+          <span>Total Bill (with tip)</span>
+          <span class="value" id="total-with-tip">$0.00</span>
+        </div>
+        <div class="result-row primary">
+          <span>Per Person</span>
+          <span class="value large" id="per-person-amount">$0.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--Dear Ms.Kim, ang sakit n po ng ulo nmin-->
