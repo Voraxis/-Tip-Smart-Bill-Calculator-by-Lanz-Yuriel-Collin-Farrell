@@ -1,0 +1,182 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.splitter-card {
+  background: white;
+  width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid #dbe2ef;
+}
+
+.card-header {
+  background-color: #112d4e;
+  color: white;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-number {
+  background: white;
+  color: #112d4e;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.card-body {
+  display: flex;
+  padding: 24px;
+  gap: 24px;
+}
+
+.input-section {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4f5d75;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #dbe2ef;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #3f72af;
+}
+
+.tip-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tip-btn {
+  background: #f9f7f7;
+  border: 1px solid #dbe2ef;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #3f72af;
+  flex: 1;
+}
+
+.tip-btn.active {
+  background: #3f72af;
+  color: white;
+  border-color: #3f72af;
+}
+
+#custom-tip {
+  width: 80px;
+  padding: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.people-counter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.people-counter button {
+  background: #3f72af;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.people-counter input {
+  width: 60px;
+  text-align: center;
+  padding: 8px;
+}
+
+.display-section {
+  flex: 1;
+  background-color: #f9f7f7;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #dbe2ef;
+}
+
+.dynamic-feedback {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #112d4e;
+  margin-bottom: 12px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #dbe2ef;
+  color: #4f5d75;
+  font-size: 0.9rem;
+}
+
+.result-row.primary {
+  border-bottom: none;
+  margin-top: auto;
+  padding-top: 16px;
+  color: #112d4e;
+  font-weight: bold;
+}
+
+.value {
+  font-weight: 600;
+  color: #112d4e;
+}
+
+.value.large {
+  font-size: 1.6rem;
+  color: #3f72af;
+}
